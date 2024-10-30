@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+</head>
+<body>
+    <h1><U>Student Registration Form Using Table in HTML</U></h1>
+    <table border="1">
+        <tr>
+         <td>First Name</td> <td><input type="text" maxlength="50" required>(Max 50 Charcters Allowed)</td></tr>
+        <tr>
+        <td>Last Name </td><td> <input type="text" maxlength="50" required> (Max 50 Charcters Allowed)</td></tr>
+        <tr>
+        <td>Email ID</td> <td><input type="email" required></td></tr>
+        <tr>
+        <td>Mobile Number</td> <td> <input type="number" maxlength="1o"> (10 Digits Allowed)<br></td></tr>
+        <form>
+            <tr>
+            <td>Gender </td>  <td> <input type="radio" name="Gender">Male</td>
+            <td><input type="radio" name="Gender">Female</td></tr>
+            Date of Birth(DOB) <input type="date" min="2024-01-01" max="2024-12-31">
+        </form>
+        <tr>
+        <td>Address</td> <td><textarea rows="20" cols="20" required></textarea></td></tr>
+        <tr>
+        <td>City </td> <td> <input type="text" maxlength="50"> (Max 50 Charcters Allowed)</td></tr>
+        <tr>
+        <td>Pin Code</td> <td> <input type="number" maxlength="50"> (Max 6 Numbers Allowed)</td></tr>
+        <tr>
+        <td>State </td><td><input type="text" maxlength="50"> (Max 50 Charcters Allowed)</td></tr>
+        Hobbies <input type="checkbox"  name="Hobbies" value="hoby">Drawing
+        <input type="checkbox" name="Hobbies" value="hoby">Singing
+        <input type="checkbox" name="Hobbies" value="hoby">Dancing
+        <input type="checkbox" name="Hobbies" value="hoby">Sketching
+        <input type="checkbox" name="Hobbies" value="hoby">Singing
+        <input type="checkbox" name="Hobbies" value="hoby" placeholder="ex-Teaching">Others
+        </tr>
+    </table>
+</body>
+</html>
