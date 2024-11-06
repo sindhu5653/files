@@ -1,0 +1,10 @@
+p{
+    text-transform: capitalize;
+    text-align: center;
+    /* text-decoration-line:underline; */
+    /* text-decoration-color:red ; */
+    /* text-decoration-style:wavy ; */
+    /* text-decoration-thickness:5px ; */
+    text-indent: 5px;
+    text-shadow: 2px 2px 5px red;
+}
