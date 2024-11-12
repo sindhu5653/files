@@ -1,0 +1,40 @@
+.main{
+    height: 500px;
+    background-color: purple;
+    display: flex;
+    flex-direction: column;
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap-reverse; */
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    justify-content: center; 
+    /* justify-content: space-between;  */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+}
+.sub1{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    /* display: inline-block; */
+}
+.sub2{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    /* display: inline-block; */
+}
+.sub3{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    /* display: inline-block; */
+}
+a{
+    background-color: yellow;
+    /* display: block; */
+}
