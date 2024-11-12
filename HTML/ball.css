@@ -1,0 +1,35 @@
+@keyframes text{
+    from{
+        transform: translateY(0px);
+        /* background-color: red; */
+    }
+    to{
+        transform: translateY(300px);
+        /* background-color: red; */
+    }
+}
+@keyframes ball{
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: 300deg;
+    }
+}
+.main{
+    height: 100px;
+    width: 100px;
+    animation-name: text;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    border-radius: 50%;
+
+}
+img{
+    border-radius: 50%;
+    height: 100px;
+    animation: ball 1s ease-in 0s infinite alternate;
+}

@@ -1,0 +1,11 @@
+.main{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+   
+}
+.main:hover{
+    transition-duration: 3s;
+    transition-timing-function: linear;
+    transform: translate(200px,200px) rotate(300deg) scale(2)  skew(10deg,30deg);
+}

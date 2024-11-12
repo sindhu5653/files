@@ -1,0 +1,12 @@
+.main{
+    width: 500px;
+    height: 100vh;
+    background-color: red;
+    position: relative;
+}
+.main2{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: fixed;
+}

@@ -1,0 +1,12 @@
+p::first-letter{
+    color: red;
+}
+p::first-line{
+    color: green;
+}
+ul ::marker{
+    color: rgb(170, 170, 255);
+}
+input::placeholder{
+    color: purple;
+}

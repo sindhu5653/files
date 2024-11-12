@@ -1,0 +1,21 @@
+@keyframes move{
+    from{
+        transform: translate(0px);
+        background-color: red;
+    }
+    to{
+        transform: translate(300px) rotate(340deg);
+        background-color: green;
+    }
+}
+.main{
+    height: 100px;
+    width: 100px;
+    background-color: purple;
+    animation-name: move;
+    animation-duration: 1s;
+    animation-timing-function:ease ;
+    animation-delay: 1s;
+    animation-direction: normal;
+    animation-iteration-count: 2;
+}
