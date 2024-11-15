@@ -1,0 +1,13 @@
+.main_grid{
+    display: grid;
+    /* grid-template-columns: auto auto auto; */
+    /* grid-template-columns: 100px 100px 100px; */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px;
+    gap: 10px 10px;
+}
+.items{
+    background-color: yellow;
+    color: black;
+    /* border: 1px solid blue; */
+}
