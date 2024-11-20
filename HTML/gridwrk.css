@@ -1,0 +1,12 @@
+.main{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: "logo text home";
+    /* background-color: red; */
+}
+.logo{
+    grid-area: logo;
+}
+.text{
+    grid-area: text;
+}

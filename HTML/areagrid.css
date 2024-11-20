@@ -1,0 +1,28 @@
+.main{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: "logo search services services services"
+                            "sidebar  mainbar information information information";
+    grid-template-rows: 50px 50vh;
+}
+.items{
+    background-color: red;
+}
+.item1{
+    grid-area: logo;
+}
+.item2{
+    grid-area: services;
+}
+.item3{
+    grid-area: search;
+}
+.item4{
+    grid-area: sidebar;
+}
+.item5{
+    grid-area: mainbar;
+}
+.item6{
+    grid-area: information;
+}
