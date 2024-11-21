@@ -1,0 +1,18 @@
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 10px 10px;
+
+}
+.main2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.home{
+    display: flex;
+}
+.main3{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+}
