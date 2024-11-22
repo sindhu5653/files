@@ -1,12 +1,65 @@
 .main{
     display: grid;
     gap: 10px;
-    grid-template-areas: "logo text home";
-    /* background-color: red; */
+    grid-template-areas: "logo search services services"
+                        "sidebar mainbar mainbar mainbar"
+                        "sidebar2 mainbar mainbar mainbar"
+                        "footer1 footer2 footer2 footer2";
+    width: 900px;
 }
-.logo{
+.item{
+    background-color: red;
+}
+.item1{
     grid-area: logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
 }
-.text{
-    grid-area: text;
+.item2{
+    grid-area: search;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item2 input{
+    width: 80%;
+}
+.item3{
+    grid-area: services;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.items ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    list-style-type: none;
+}
+.item4{
+    grid-area: sidebar;
+}
+.item4 img{
+    width: 100%;
+}
+.item5{
+    grid-area: mainbar;
+}
+.item5 img{
+    width: 100%;
+}
+.item6{
+    grid-area: sidebar2;
+}
+.item7{
+    grid-area: footer1;
+    height: 60px;
+}
+.item8{
+    grid-area: footer2;
+    height: 60px;
 }
