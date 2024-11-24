@@ -71,7 +71,7 @@
     margin: auto;
 }
 
-.container{
+.main4{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
@@ -84,32 +84,32 @@
     gap: 20px;
     align-items: center;
 }
-.container input{
+.main4 input{
     width: 250px;
     height: 20px;
 }
 
 @media(max-width:769px){
-    .container {
+    .main4 {
         display: grid;
-        grid-template-columns: 1fr 1fr;  /* Creates two equal columns */
-        grid-template-rows: auto auto;   /* Defines two rows */
-        grid-gap: 10px;                  /* Adds spacing between the elements */
-        justify-items: center;           /* Centers items horizontally */
-        align-items: center;             /* Centers items vertically */                  /* Takes full height of the viewport */
+        grid-template-columns: 1fr 1fr;  
+        grid-template-rows: auto auto;   
+        grid-gap: 10px;                  
+        justify-items: center;           
+        align-items: center;                         
     }
     
     .class-1, .class-2 {
-        width: 300px;  /* Set fixed width for class-1 and class-2 */
-        height: 300px; /* Set fixed height */
+        width: 300px;  
+        height: 300px; 
         /* background-color: lightblue;  */
     }
     
     .class-3 {
-        grid-column: 1 / span 2;   /* Span class-3 across both columns */
-        grid-row: 2;               /* Place class-3 in the second row */
-        width: 300px;              /* Set a specific width for class-3 */
-        height: 300px;             /* Set height */
+        grid-column: 1 / span 2;   
+        grid-row: 2;               
+        width: 300px;            
+        height: 300px;             
         /* background-color: lightcoral; */
     }
     
@@ -129,7 +129,7 @@
     }
 }
 @media(max-width:426px){
-    .container{
+    .main4{
         display: flex;
         flex-direction: column;
     }
