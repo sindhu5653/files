@@ -1,0 +1,148 @@
+*{
+    margin: 0px;
+}
+.navbar{
+    display: flex;
+    background-color: lightblue;
+    /* justify-content: space-between; */
+    align-items: center;
+    height: 50px;
+}
+.main1{
+    display: flex;
+    flex: 1;
+    /* background-color: red; */
+    /* color: red; */
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+.main2{
+    flex: 2;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    /* font-size: 15px; */
+}
+/* .main2 input{
+    height: 20px;
+    width: 80%;
+    border-radius: 20px;
+    border: none;
+} */
+.main3{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-weight: 700px;  */
+}
+.main3 ul{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    list-style-type: none;
+    justify-content: space-evenly;
+    font-weight: 700;
+    font-size: 15px;
+    width: 100%;
+}
+.main2 .searchbar{
+    width: 50%;
+    height: 25px;
+    border-radius: 15px;
+    border: 1px solid black;
+    padding-left: 10px;
+}
+.searchicon{
+    position: relative;
+    right: 30px;
+    font-size: 22px;
+    color: grey;
+}
+ .nav-menu{
+    display: none;
+} 
+.class{
+    width: 300px;
+    height: 300px;
+    /* background-color: aqua; */
+    margin: auto;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin: auto;
+    padding-top: 40px;
+}
+.class-1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.container input{
+    width: 250px;
+    height: 20px;
+}
+
+@media(max-width:769px){
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;  /* Creates two equal columns */
+        grid-template-rows: auto auto;   /* Defines two rows */
+        grid-gap: 10px;                  /* Adds spacing between the elements */
+        justify-items: center;           /* Centers items horizontally */
+        align-items: center;             /* Centers items vertically */                  /* Takes full height of the viewport */
+    }
+    
+    .class-1, .class-2 {
+        width: 300px;  /* Set fixed width for class-1 and class-2 */
+        height: 300px; /* Set fixed height */
+        /* background-color: lightblue;  */
+    }
+    
+    .class-3 {
+        grid-column: 1 / span 2;   /* Span class-3 across both columns */
+        grid-row: 2;               /* Place class-3 in the second row */
+        width: 300px;              /* Set a specific width for class-3 */
+        height: 300px;             /* Set height */
+        /* background-color: lightcoral; */
+    }
+    
+    .ser li{
+        display: none;
+    }
+     .nav-menu{
+        display: block;
+     }
+    .main2{
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .main3{
+        flex: 1;
+    }
+}
+@media(max-width:426px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .main3 .ser{
+        display: none;
+    }
+}
+@media(min-width:426px){
+    .main3 .menu{
+        display: none;
+    }
+    
+}
+
+
+
