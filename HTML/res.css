@@ -1,0 +1,149 @@
+*{
+    margin: 0px;
+}
+.navbar{
+    display: grid;
+    grid-template-areas: 'main1' 'main2' 'main3' 
+                            'class-1 class' 'class-2 class' 'class-3 class' ;
+    grid-template-rows: 100px 100px;
+    background-color: lightblue;
+    align-items: center;
+    height: 50px;
+    gap: 10px;
+}
+.navbar{
+    background-color: red;
+}
+.navbar{
+    /* display: flex;
+    flex: 1; */
+    grid-area: main1;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+.navbar{
+    grid-area: main2;
+    justify-content: center; 
+    align-items: center;
+}
+.navbar{
+    grid-area: main3;
+    justify-content: center;
+    align-items: center;
+}
+.main3 ul{
+    grid-area: main4;
+    gap: 10px;
+    align-items: center;
+    list-style-type: none;
+    justify-content: space-evenly;
+    font-weight: 700;
+    font-size: 15px;
+    width: 100%;
+}
+.main2 .searchbar{
+    width: 50%;
+    height: 25px;
+    border-radius: 15px;
+    border: 1px solid black;
+    padding-left: 10px;
+}
+.searchicon{
+    position: relative;
+    right: 30px;
+    font-size: 22px;
+    color: grey;
+}
+ .nav-menu{
+    display: none;
+} 
+.class{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+}
+
+.main4{
+    display: grid;
+    grid-area: main4;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin: auto;
+    padding-top: 40px;
+}
+.class-1{
+    /* grid-area: class-1; */
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.main4 input{
+    width: 250px;
+    height: 20px;
+}
+
+@media(max-width:769px){
+    .main4 {
+        display: grid;
+        grid-template-areas: 'main1' 'main2' 'main3'
+                                'claas-1 class' 'class-2 class' 'class-3 class';
+        grid-template-columns: 1fr 1fr;  
+        grid-template-rows: 100px 100px;   
+        grid-gap: 10px;                  
+        justify-items: center;           
+        align-items: center;                         
+    }
+    
+    .class-1, .class-2 {
+        width: 300px;  
+        height: 300px; 
+    }
+    
+    .class-3 {
+        grid-column: 1 / span 2;   
+        grid-row: 2;               
+        width: 300px;            
+        height: 300px;             
+    }
+    
+    .ser li{
+        display: none;
+    }
+     .nav-menu{
+        display: block;
+     }
+    .main2{
+        /* flex: 1; */
+        /* display: flex; */
+        display: grid;
+        justify-content: flex-end;
+    }
+    .main3{
+        /* flex: 1; */
+        display: grid;
+    }
+}
+@media(max-width:426px){
+    .main4{
+        grid-template-areas:'class-1 class' 'class-2 class'
+                                'class-3 class';
+        grid-template-rows: 100px 100px;
+    }
+    .main3 .ser{
+        display: none;
+    }
+}
+@media(min-width:426px){
+    .main3 .menu{
+        grid-template-areas: 'class-1 class'
+                                'class-2 class'
+                                'class-3 class';
+        grid-template-rows: 100px 100px 100px;
+        display: none;
+    }
+    
+}
+
+
+
