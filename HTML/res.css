@@ -4,9 +4,9 @@
 .navbar{
     display: grid;
     grid-template-areas: 'main1' 'main2' 'main3' 
-                            'class-1 class' 'class-2 class' 'class-3 class' ;
+                             ;
     grid-template-rows: 100px 100px;
-    background-color: lightblue;
+    background-color: rgba(0, 171, 228, 0.801);
     align-items: center;
     height: 50px;
     gap: 10px;
@@ -73,7 +73,7 @@
     padding-top: 40px;
 }
 .class-1{
-    /* grid-area: class-1; */
+    grid-area: class-1;
     flex-direction: column;
     gap: 20px;
     align-items: center;
